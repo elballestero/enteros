@@ -116,6 +116,7 @@ function generateOperation() {
 
     // Generar opciones de respuesta
     generateOptions(num1, num2); // <-- Pasar num1 y num2 como parámetros
+    resultElement.textContent = "Esperando respuesta...";
 }
 
 // Función para generar opciones de respuesta
