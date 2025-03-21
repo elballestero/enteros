@@ -1,0 +1,180 @@
+/* Estilos generales */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #2575fc;
+    margin-bottom: 1.5rem;
+}
+
+#timer {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #6a11cb;
+    margin-bottom: 1.5rem;
+}
+
+#operation {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin: 1.5rem 0;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.option {
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    background: #d3d3d3; /* Gris claro */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.option:hover {
+    background: #b0b0b0; /* Gris medio */
+    transform: translateY(-2px);
+}
+
+.option:active {
+    transform: translateY(0);
+}
+
+.option.correct {
+    background: #4caf50;
+    color: white;
+}
+
+.option.incorrect {
+    background: #f44336;
+    color: white;
+}
+
+#result {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+}
+
+#stats {
+    font-size: 1.1rem;
+    color: #6a11cb;
+    margin-top: 1.5rem;
+}
+
+button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background: #6a11cb; /* Morado oscuro */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin: 0.5rem;
+}
+
+button:hover {
+    background: #4d0a9e; /* Morado más oscuro */
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+#next {
+    background: #6a11cb;
+}
+
+#next:hover {
+    background: #4d0a9e;
+}
+
+#nameForm {
+    margin-bottom: 1.5rem;
+}
+
+#nameForm input {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 2px solid #2575fc;
+    border-radius: 10px;
+    margin-right: 0.5rem;
+}
+
+#nameForm button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background: #2575fc;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#nameForm button:hover {
+    background: #1a5bbf;
+    transform: translateY(-2px);
+}
+
+#nameForm button:active {
+    transform: translateY(0);
+}
+
+/* Diseño responsive */
+@media (max-width: 480px) {
+    .container {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    #operation {
+        font-size: 1.5rem;
+    }
+
+    .option {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 0.6rem 1rem;
+    }
+}
